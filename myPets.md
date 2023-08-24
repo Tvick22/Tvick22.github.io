@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /myPets
-title: Student Blog
+title: My Pets
 ---
 
 # My Pets
