@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-US" }}" data-theme="halloween" class="bg-base-200">
+  
 
 {%- include head.html -%}
 
-<body>
+<body class="bg-base-200 h-screen ">
 
   <div class="wrapper">
-    <header>
+    <header class="sticky top-0 z-50">
       {%- include header.html -%}
     </header>
 
 
-    <section>
+    <section class="container mx-auto text-base-content pt-8 prose">
       {{ content }}
     </section>
 
   </div>
 </body>
 
+<script>
+  let themeToggle = false;
 
+  function toggleTheme() {
+    const page = document.getElementsByTagName("html")[0]
+    if (themeToggle) {
+      page.setAttribute('data-theme', 'halloween')
+      themeToggle = false
+      return;
+    }
+    
+    page.setAttribute('data-theme', 'garden')
+    themeToggle = true;
+  }
+</script>
 </html>

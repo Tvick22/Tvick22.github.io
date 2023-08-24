@@ -3,9 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-# Trevor's Page - *[Github account](https://github.com/Tvick22)*
-
----
+# About Me
 
 ## My Classes
 
@@ -17,7 +15,6 @@ title: Student Blog
 4. **Chemistry** - [Canvas Page](https://poway.instructure.com/courses/141505)
 5. **Spanish 4** - [Canvas Page](https://poway.instructure.com/courses/145058)
 
----
 
 ## Projects
 
@@ -28,4 +25,4 @@ title: Student Blog
  | AP World | 8/31 | [Unit 1 Project](https://drive.google.com/drive/folders/1vY0WTiucEsgUEHP2fnCOJ8ZEJ7ONh-ON) |
  | Chemistry | 8/31 | Box Project |
 
- ---
+---
