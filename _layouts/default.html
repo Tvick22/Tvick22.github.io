@@ -20,18 +20,18 @@
 </body>
 
 <script>
-  let themeToggle = false;
+  let lightMode = false
 
   function toggleTheme() {
     const page = document.getElementsByTagName("html")[0]
-    if (themeToggle) {
+    if (lightMode) {
       page.setAttribute('data-theme', 'halloween')
-      themeToggle = false
+      lightMode = false
       return;
     }
     
     page.setAttribute('data-theme', 'corporate')
-    themeToggle = true;
+    lightMode = true;
   }
 </script>
 </html>
