@@ -5,7 +5,7 @@ title: Student Blog
 
 # About Me
 
-<img src="./images/AboutMePicture.jpg" class="h-42 w-32" />
+<img src="./images/AboutMePicture.jpg" class="h-42 w-32 border-solid border-2" />
 
 ## My Classes
 
