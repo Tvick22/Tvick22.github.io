@@ -336,6 +336,25 @@ courses: { blogs: {week: 1} }
                 case 40:    // down arrow
                     if (snake_dir !== 0)    // not up
                         snake_next_dir = 2; // then switch down
+                                case 37:    // left arrow
+                    if (snake_dir !== 1)    // not right
+                        snake_next_dir = 3; // then switch left
+                    break;
+                case 65:    // left ("a")
+                    if (snake_dir !== 1)    // not right
+                        snake_next_dir = 3; // then switch left
+                    break;
+                case 87:    // up ("w")
+                    if (snake_dir !== 2)    // not down
+                        snake_next_dir = 0; // then switch up
+                    break;
+                case 68:    // right ("d")
+                    if (snake_dir !== 3)    // not left
+                        snake_next_dir = 1; // then switch right
+                    break;
+                case 83:    // down ("s")
+                    if (snake_dir !== 0)    // not up
+                        snake_next_dir = 2; // then switch down
                     break;
             }
         }
