@@ -5,7 +5,7 @@ layout: post
 title: Classic Snake Game
 description: A pretty advanced use of JavaScript building classic snake game using menu controls, key events, snake simulation and timers.  
 type: hacks
-courses: { blogs: {week: 1} }
+courses: { blogs: {week: 2} }
 ---
 
 <style>
@@ -278,18 +278,23 @@ courses: { blogs: {week: 1} }
                 snake[snake.length] = {x: snake[0].x, y: snake[0].y};
                 altScore(++score);
                 addFood();
-                activeDot(food.x, food.y);
+                headDot(food.x, food.y);
             }
             // Repaint canvas
             ctx.beginPath();
             ctx.fillStyle = "orange";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
-            for(let i = 0; i < snake.length; i++){
-                activeDot(snake[i].x, snake[i].y);
+            headDot(snake[0].x, snake[0].y);
+            for(let i = 1; i < snake.length; i++){
+                if (i % 2 !== 0) {
+                    activeDotA(snake[i].x, snake[i].y);
+                    continue;
+                }
+                activeDotB(snake[i].x, snake[i].y)
             }
             // Paint food
-            activeDot(food.x, food.y);
+            appleDot(food.x, food.y);
             // Debug
             //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
             // Recursive call after speed delay, déjà vu
@@ -358,11 +363,29 @@ courses: { blogs: {week: 1} }
                     break;
             }
         }
-        /* Dot for Food or Snake part */
+        /* Dot for Snake part A*/
         /////////////////////////////////////////////////////////////
-        let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
+        let activeDotA = function(x, y){
+            ctx.fillStyle = "#9ACD32";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        }
+        /* Dot for Snake part B*/
+        /////////////////////////////////////////////////////////////
+        let activeDotB = function(x, y){
+            ctx.fillStyle = "#ADFF2F";
+            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        }
+        /* Dot for Snake Head part */
+        /////////////////////////////////////////////////////////////
+        let headDot = function(x, y){
+            ctx.fillStyle = "#008000";
+            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        }
+        /* Dot for Apple part */
+        /////////////////////////////////////////////////////////////
+        let appleDot = function(x, y){
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK)
         }
         /* Random food placement */
         /////////////////////////////////////////////////////////////
