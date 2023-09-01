@@ -341,9 +341,6 @@ courses: { blogs: {week: 2} }
                 case 40:    // down arrow
                     if (snake_dir !== 0)    // not up
                         snake_next_dir = 2; // then switch down
-                                case 37:    // left arrow
-                    if (snake_dir !== 1)    // not right
-                        snake_next_dir = 3; // then switch left
                     break;
                 case 65:    // left ("a")
                     if (snake_dir !== 1)    // not right
