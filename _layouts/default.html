@@ -24,7 +24,7 @@
 
   if (!localStorage.getItem("theme")) {
     localStorage.setItem("theme", "dark")
-    page.setAttribute("data-theme", "halloween")
+    page.setAttribute("data-theme", "business")
     document.getElementById('sunIcon').classList.remove('hidden')
     document.getElementById('moonIcon').classList.add('hidden')
   }
@@ -34,14 +34,14 @@
     document.getElementById('moonIcon').classList.remove('hidden')
   } 
   if (localStorage.getItem("theme") == "dark") {
-    page.setAttribute("data-theme", "halloween")
+    page.setAttribute("data-theme", "business")
     document.getElementById('sunIcon').classList.remove('hidden')
     document.getElementById('moonIcon').classList.add('hidden')
   }
 
   function toggleTheme() {
     if (localStorage.getItem("theme") == "light") {
-      page.setAttribute('data-theme', 'halloween')
+      page.setAttribute('data-theme', 'business')
       document.getElementById('sunIcon').classList.remove('hidden')
       document.getElementById('moonIcon').classList.add('hidden')
       localStorage.setItem("theme", "dark")
