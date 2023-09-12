@@ -56,7 +56,7 @@ courses: { blogs: {week: 4} }
       <div class="calculator-number btn btn-outline">.</div>
       <div class="calculator-operation btn btn-outline btn-accent">/</div>
       <!--row 5-->
-      <div></div>
+      <div class="calculator-operation btn btn-outline btn-accent">√</div>      
       <div></div>
       <div></div>      
       <div class="calculator-equals btn btn-primary">=</div>
@@ -118,7 +118,6 @@ courses: { blogs: {week: 4} }
           return; // exits function
       }
       // occurs if there is already a number stored in the calculator
-      firstNumber = calculate(firstNumber, parseFloat(output.innerHTML)); 
       operator = choice;
       output.innerHTML = firstNumber.toString();
       nextReady = true;
@@ -140,6 +139,9 @@ courses: { blogs: {week: 4} }
           case "/":
               result = first / second;
               break;
+          case "√":
+            result = Math.pow(first, 1/second);
+            break;
           default: 
               break;
       }
