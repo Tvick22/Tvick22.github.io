@@ -19,7 +19,7 @@ courses: { blogs: {week: 3} }
     grid-row: span 1;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: currentColor;
 
   
     padding: 0.25em;
