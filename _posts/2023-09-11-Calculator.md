@@ -88,10 +88,12 @@ courses: { blogs: {week: 4} }
       if (value != ".") {
           if (nextReady == true) { // nextReady is used to tell the computer when the user is going to input a completely new number
               output.innerHTML = value;
+              // first number
               if (value != "0") { // if statement to ensure that there are no multiple leading zeroes
                   nextReady = false;
               }
           } else {
+              // second number
               output.innerHTML = output.innerHTML + value; // concatenation is used to add the numbers to the end of the input
           }
       } else { // special case for adding a decimal; can not have two decimals
@@ -116,6 +118,10 @@ courses: { blogs: {week: 4} }
           nextReady = true;
           operator = choice;
           return; // exits function
+      }
+      if (nextReady == false) {
+        console.log('hi')
+        equal()
       }
       // occurs if there is already a number stored in the calculator
       operator = choice;
