@@ -56,8 +56,8 @@ courses: { blogs: {week: 4} }
       <div class="calculator-number btn btn-outline">.</div>
       <div class="calculator-operation btn btn-outline btn-accent">/</div>
       <!--row 5-->
-      <div class="calculator-operation btn btn-outline btn-accent">√</div>      
-      <div></div>
+      <div class="calculator-operation btn btn-outline btn-accent">√</div>
+      <div class="calculator-operation btn btn-outline btn-accent">^</div>
       <div></div>      
       <div class="calculator-equals btn btn-primary">=</div>
   </div>
@@ -120,7 +120,6 @@ courses: { blogs: {week: 4} }
           return; // exits function
       }
       if (nextReady == false) {
-        console.log('hi')
         equal()
       }
       // occurs if there is already a number stored in the calculator
@@ -147,6 +146,9 @@ courses: { blogs: {week: 4} }
               break;
           case "√":
             result = Math.pow(first, 1/second);
+            break;
+          case "^":
+            result = Math.pow(first, second);
             break;
           default: 
               break;
@@ -181,5 +183,45 @@ courses: { blogs: {week: 4} }
       output.innerHTML = "0";
       nextReady = true;
   }
+
+  const eventMap = {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "0": 0,
+    ".": ".",
+    "+": "+",
+    "-": "-",
+    "*": "*",
+    "/": "/",
+    "^": "^",
+    "Enter": "=",
+  };
+
+  window.addEventListener("keypress", (event) => {
+    const key = eventMap[event.key];
+
+    if (key === undefined) {
+      return
+    }
+
+    if (key === "=") {
+      equal()
+      return
+    }
+
+    if (["+", "-", "*", "/", "^"].includes(key)) {
+      operation(key);
+      return; 
+    }
+
+    number(key)
+  })
 
 </script>
