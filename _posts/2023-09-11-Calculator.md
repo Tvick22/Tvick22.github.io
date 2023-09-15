@@ -150,6 +150,9 @@ courses: { blogs: {week: 4} }
           case "^":
             result = Math.pow(first, second);
             break;
+          case null:
+            return first
+            break;
           default: 
               break;
       }
@@ -167,6 +170,7 @@ courses: { blogs: {week: 4} }
   function equal () { // function used when the equals button is clicked; calculates equation and displays it
       firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
       output.innerHTML = firstNumber.toString();
+      operator = null
       nextReady = true;
   }
 
