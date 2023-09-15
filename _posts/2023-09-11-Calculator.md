@@ -205,19 +205,24 @@ courses: { blogs: {week: 4} }
     "*": "*",
     "/": "/",
     "^": "^",
+    "c": "clear",
     "Enter": "=",
   };
 
   window.addEventListener("keypress", (event) => {
     const key = eventMap[event.key];
-
     if (key === undefined) {
-      return
+      return;
+    }
+
+    if (key === "clear") {
+      clearCalc();
+      return;
     }
 
     if (key === "=") {
-      equal()
-      return
+      equal();
+      return; 
     }
 
     if (["+", "-", "*", "/", "^"].includes(key)) {
