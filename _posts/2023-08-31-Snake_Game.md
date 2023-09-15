@@ -68,8 +68,12 @@ courses: { blogs: {week: 2} }
     }
 
     #setting input:checked + label{
-        background-color: #FFF;
-        color: #000;
+        background-color: hsl(var(--s));
+        color: hsl(var(--p));
+    }
+
+    .link-alert {
+        color: hsl(var(--p));
     }
 </style>
 
@@ -81,13 +85,13 @@ courses: { blogs: {week: 2} }
     <div class="container bg-primary-content pt-12 pb-12" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
-            <p>Welcome to Snake, press <span class="bg-primary">space</span> to begin</p>
+            <p class="text-primary">Welcome to Snake, press <span class="bg-secondary">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
             <a id="setting_menu" class="link-alert">settings</a>
         </div>
         <!-- Game Over -->
         <div id="gameover" class="py-4 text-light">
-            <p>Game Over, press <span class="bg-primary">space</span> to try again</p>
+            <p class="text-primary">Game Over, press <span class="bg-secondary">space</span> to try again</p>
             <a id="new_game1" class="link-alert">new game</a>
             <a id="setting_menu1" class="link-alert">settings</a>
         </div>
@@ -95,10 +99,10 @@ courses: { blogs: {week: 2} }
         <canvas id="snake" class="wrap" width="320" height="320" tabindex="1"></canvas>
         <!-- Settings Screen -->
         <div id="setting" class="py-4 text-light">
-            <p>Settings Screen, press <span class="bg-primary">space</span> to go back to playing</p>
+            <p class="text-primary">Settings Screen, press <span class="bg-secondary">space</span> to go back to playing</p>
             <a id="new_game2" class="link-alert">new game</a>
             <br>
-            <p>Speed:
+            <p class="text-primary">Speed:
                 <input id="speed1" type="radio" name="speed" value="120" checked/>
                 <label for="speed1">Slow</label>
                 <input id="speed2" type="radio" name="speed" value="75"/>
@@ -106,7 +110,7 @@ courses: { blogs: {week: 2} }
                 <input id="speed3" type="radio" name="speed" value="35"/>
                 <label for="speed3">Fast</label>
             </p>
-            <p>Wall:
+            <p class="text-primary">Wall:
                 <input id="wallon" type="radio" name="wall" value="1" checked/>
                 <label for="wallon">On</label>
                 <input id="walloff" type="radio" name="wall" value="0"/>
