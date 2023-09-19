@@ -5,7 +5,7 @@ layout: post
 title: Calculator
 description: Calculator for Basic Math
 type: tangibles
-courses: { blogs: {week: 4} }
+courses: { blogs: { week: 4 } }
 ---
 
 <style>
@@ -170,7 +170,7 @@ courses: { blogs: {week: 4} }
   function equal () { // function used when the equals button is clicked; calculates equation and displays it
       firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
       output.innerHTML = firstNumber.toString();
-      operator = null
+      operator = null;
       nextReady = true;
   }
 

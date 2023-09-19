@@ -5,7 +5,7 @@ layout: post
 title: Grade Calculator
 description: Calculator for Grades
 type: tangibles
-courses: { blogs: {week: 5} }
+courses: { blogs: { week: 5 } }
 ---
 
 <!-- Help Message -->

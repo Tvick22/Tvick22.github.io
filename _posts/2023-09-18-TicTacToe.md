@@ -5,7 +5,7 @@ layout: post
 title: Tic Tac Toe
 description: Simple game of Tic Tac Toe
 type: tangibles
-courses: { blogs: {week: 4} }
+courses: { blogs: { week: 4 } }
 ---
 
 <button class="btn btn-primary" onclick="resetBoard()">Reset</button>
@@ -15,15 +15,16 @@ courses: { blogs: {week: 4} }
 <div id="board" class="grid grid-cols-3 grid-rows-3 pb-4">
     <button id="1" class="btn btn-outline btn-primary h-48 text-5xl" onClick="changeSpot(1)"></button>  
     <button id="2" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(2)"></button>  
-    <button id="3" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(3)"></button>  
+    <button id="3" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(3)"></button>
 
-    <button id="4" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(4)"></button>  
-    <button id="5" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(5)"></button>  
-    <button id="6" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(6)"></button>  
+    <button id="4" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(4)"></button>
+    <button id="5" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(5)"></button>
+    <button id="6" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(6)"></button>
 
-    <button id="7" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(7)"></button>  
-    <button id="8" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(8)"></button>  
-    <button id="9" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(9)"></button>  
+    <button id="7" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(7)"></button>
+    <button id="8" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(8)"></button>
+    <button id="9" class="btn btn-outline btn-primary h-full text-5xl" onClick="changeSpot(9)"></button>
+
 </div>
 
 <script>
