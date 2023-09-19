@@ -114,7 +114,7 @@ courses: { blogs: {week: 4} }
   // Operator action
   function operation (choice) { // function to input operations into the calculator
       if (firstNumber == null) { // once the operation is chosen, the displayed number is stored into the variable firstNumber
-          firstNumber = parseInt(output.innerHTML);
+          firstNumber = parseFloat(output.innerHTML);
           nextReady = true;
           operator = choice;
           return; // exits function
