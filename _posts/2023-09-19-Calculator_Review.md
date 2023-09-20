@@ -9,7 +9,7 @@ courses: { blogs: {week: 5} }
 ---
 
 1. First I started changing the calculator by changing the style of the page
-    - I styled the buttons and output area using DaisyUI
+    - I styled the buttons and output area
 2. Next I added the square root function by adding a new operation that takes the first number and brings it to the power of (1/second number)
 3. I also removed a line of code that was causing the operation to repeat twice
 4. I also made sure the operation doesn't repeat more than one time when you press the = sign
