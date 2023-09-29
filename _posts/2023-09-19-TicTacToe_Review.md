@@ -4,6 +4,7 @@ comments: false
 layout: post
 title: Creating Tic Tac Toe
 description: This post goes over the steps I took to create a game of Tic Tac Toe.
+type: tangibles
 courses: { blogs: {week: 5} }
 ---
 
