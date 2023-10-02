@@ -8,7 +8,8 @@ type: hacks
 courses: { blogs: {week: 5} }
 ---
 
-# The HTML Portion
+# The HTML
+
 ```html
     <div>
         <div class="w-full flex justify-center">
@@ -25,6 +26,8 @@ courses: { blogs: {week: 5} }
 > I have a div that wraps around the sprite image. It uses CSS to make sure the sprite is centered on the page. Inside that I have the canvas and image with their unique ids.
 
 > Under the sprite, there is a bar which gives you the option to change the speed. I used CSS to make it look like a bar, and have a tooltip that tells the user what the bar controls. The input itself has an id called 'speed' and a value property.
+
+# Javscript Parts/ Changes
 
 ```js
     this.maxFrame = FRAME_LIMIT-1;
