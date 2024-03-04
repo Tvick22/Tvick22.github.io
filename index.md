@@ -7,7 +7,7 @@ title: Student Blog
 
 <img src="./images/AboutMePicture.jpg" class="h-42 w-32 border-solid border-2" />
 
-## My Classes
+## My Classes - (Tri 1)
 
 ---
 
@@ -18,7 +18,7 @@ title: Student Blog
 5. **Spanish 4** - [Canvas Page](https://poway.instructure.com/courses/145058)
 
 
-## Projects
+## Projects - (Tri 1)
 
 ---
 
